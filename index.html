@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The History of the Pride Flag</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+width: 0.8em;
+margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+
+
+
+
+<style type="text/css">
+:root {
+--bg: #0a0a0a;
+--panel: #161618;
+--line: #2c2c2e;
+--text: #f5f5f7;
+--text-2: #a1a1a6;
+--text-3: #86868b;
+--link: #2997ff;
+--ease: cubic-bezier(.2, .75, .2, 1);
+color-scheme: dark;
+}
+html { scroll-behavior: smooth; }
+body {
+margin: 0;
+background: var(--bg);
+color: var(--text);
+font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Inter, Arial, sans-serif;
+font-size: 19px;
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
+overflow-x: hidden;
+}
+main, #quarto-content, .content { max-width: none !important; margin: 0; padding: 0; }
+.cell, .cell-output-display { margin: 0; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.eyebrow {
+display: block;
+font-size: 15px;
+font-weight: 600;
+letter-spacing: .14em;
+text-transform: uppercase;
+color: var(--text-3);
+}
+h1, h2, h3 { margin: 0; font-weight: 700; color: var(--text); }
+h2 {
+font-size: clamp(40px, 5.6vw, 76px);
+line-height: 1.05;
+letter-spacing: -.03em;
+margin: 14px 0 22px;
+}
+.intro p { color: var(--text-2); font-size: clamp(18px, 1.6vw, 21px); max-width: 680px; margin: 0 0 14px; }
+.intro strong { color: var(--text); font-weight: 600; }
+.hint { display: block; font-size: 15px; color: #6e6e73; margin-top: 8px; }
+.hint::before { content: "● "; color: var(--link); font-size: 10px; vertical-align: 2px; }
+
+.block { max-width: 1120px; margin: 0 auto; padding: clamp(96px, 16vh, 200px) 24px; }
+.block--wide { max-width: 1360px; }
+
+.js .reveal {
+opacity: 0;
+transform: translateY(40px);
+transition: opacity .9s var(--ease) var(--d, 0ms), transform .9s var(--ease) var(--d, 0ms);
+}
+.js .reveal.in { opacity: 1; transform: none; }
+
+.hero {
+min-height: 100vh;
+min-height: 100svh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 0 24px;
+box-sizing: border-box;
+position: relative;
+}
+.hero h1 {
+font-size: clamp(56px, 9vw, 136px);
+line-height: 1.02;
+letter-spacing: -.045em;
+max-width: 1200px;
+margin: 22px 0 44px;
+}
+.hero-bar { display: flex; width: min(640px, 80vw); height: 10px; border-radius: 5px; overflow: hidden; }
+.hero-bar span { flex: 1; }
+.byline { color: var(--text-3); font-size: 20px; margin: 40px 0 0; }
+.hero-in { opacity: 0; animation: rise 1.1s var(--ease) var(--d, 0ms) forwards; }
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+.hero-bar.hero-in { transform-origin: center; animation-name: grow; }
+@keyframes grow { from { opacity: 0; transform: scaleX(0); } to { opacity: 1; transform: none; } }
+.scroll-cue {
+position: absolute;
+bottom: 40px;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 4px;
+color: var(--text-3);
+font-size: 13px;
+letter-spacing: .12em;
+text-transform: uppercase;
+}
+.scroll-cue:hover { text-decoration: none; color: var(--text); }
+.scroll-cue svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2; animation: nudge 2.2s ease-in-out infinite; }
+@keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+.flag { display: block; width: 100%; height: auto; transition: transform .45s var(--ease); transform-origin: center; outline: 1px solid rgba(255, 255, 255, .08); }
+.flag-fig { position: relative; margin: 0; }
+.stripe { cursor: pointer; transition: opacity .25s ease; outline: none; }
+.flag-fig.has-selection .stripe:not(.selected) { opacity: .3; }
+.stripe:focus-visible { stroke: var(--link); stroke-width: 4; }
+
+.callout {
+position: absolute;
+z-index: 20;
+width: 270px;
+box-sizing: border-box;
+display: flex;
+gap: 12px;
+align-items: flex-start;
+padding: 14px 16px;
+background: rgba(30, 30, 32, .94);
+-webkit-backdrop-filter: blur(20px);
+backdrop-filter: blur(20px);
+border: 1px solid #3a3a3c;
+border-radius: 14px;
+box-shadow: 0 20px 50px -12px rgba(0, 0, 0, .8);
+text-align: left;
+}
+.callout[hidden] { display: none; }
+.callout::before {
+content: "";
+position: absolute;
+top: -7px;
+left: calc(var(--ax, 50%) - 6px);
+width: 12px;
+height: 12px;
+background: rgb(30, 30, 32);
+border-left: 1px solid #3a3a3c;
+border-top: 1px solid #3a3a3c;
+transform: rotate(45deg);
+}
+.callout .sw { flex: none; width: 18px; height: 18px; border-radius: 50%; margin-top: 2px; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .25); }
+.callout strong { display: block; font-size: 17px; font-weight: 600; color: var(--text); }
+.callout p { margin: 2px 0 0; font-size: 15px; line-height: 1.4; color: var(--text-2); }
+.callout.pop { animation: pop .28s var(--ease); }
+@keyframes pop { from { opacity: 0; transform: translateY(-4px) scale(.97); } to { opacity: 1; transform: none; } }
+
+.original {
+display: grid;
+grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+gap: 64px;
+align-items: center;
+margin-top: 64px;
+}
+.flag-fig--hero .flag { border-radius: 4px; }
+.original.active .flag, .flag-fig--hero:hover .flag { transform: scale(1.02); }
+.chips { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.chip {
+width: 100%;
+display: flex;
+align-items: center;
+gap: 12px;
+padding: 12px 16px;
+font: inherit;
+font-size: 17px;
+font-weight: 500;
+color: var(--text);
+background: transparent;
+border: 1px solid var(--line);
+border-radius: 999px;
+cursor: pointer;
+transition: background .2s, border-color .2s;
+}
+.chip:hover { background: var(--panel); }
+.chip[aria-pressed="true"] { background: var(--panel); border-color: #48484a; }
+.chip:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.chip .sw { width: 14px; height: 14px; border-radius: 50%; flex: none; }
+
+.timeline {
+list-style: none;
+margin: 72px 0 0;
+padding: 0;
+display: grid;
+grid-template-columns: repeat(5, minmax(0, 1fr));
+gap: 12px;
+}
+.t-item, .flag-card {
+border-radius: 24px;
+outline: none;
+transition:
+opacity .9s var(--ease) var(--d, 0ms),
+transform .9s var(--ease) var(--d, 0ms),
+filter .35s ease, background-color .35s ease, box-shadow .35s ease;
+}
+.t-item { padding: 28px 24px 32px; }
+.t-year { font-size: clamp(32px, 2.8vw, 44px); font-weight: 700; letter-spacing: -.02em; margin: 0 0 6px; }
+.t-item h3 { font-size: 21px; font-weight: 600; margin: 0 0 10px; }
+.t-text { font-size: 16px; line-height: 1.5; color: var(--text-3); margin: 0; }
+.t-rail { position: relative; display: flex; align-items: center; height: 12px; margin: 28px 0 22px; }
+.t-rail .dot { position: relative; z-index: 1; width: 12px; height: 12px; border-radius: 50%; background: var(--text); transition: background .35s, box-shadow .35s; }
+.t-rail::after { content: ""; position: absolute; left: 12px; right: -36px; height: 2px; background: #333336; }
+.t-item--last .t-rail::after { display: none; }
+
+.timeline:has(.t-item:hover, .t-item.active, .t-item:focus-visible) .t-item:not(:hover):not(.active):not(:focus-visible),
+.flag-grid:has(.flag-card:hover, .flag-card.active) .flag-card:not(:hover):not(.active) {
+filter: brightness(.38) saturate(.6);
+}
+.t-item:hover, .t-item.active, .t-item:focus-visible,
+.flag-card:hover, .flag-card.active {
+background-color: var(--panel);
+box-shadow: 0 0 0 1px var(--line), 0 40px 90px -40px var(--glow);
+}
+.t-item:hover .flag, .t-item.active .flag, .t-item:focus-visible .flag,
+.flag-card:hover .flag, .flag-card.active .flag { transform: scale(1.07); }
+.t-item:hover .dot, .t-item.active .dot, .t-item:focus-visible .dot { background: var(--glow); box-shadow: 0 0 0 6px rgba(255, 255, 255, .06); }
+
+.timeline--text { grid-template-columns: repeat(var(--cols, 4), minmax(0, 1fr)); row-gap: 24px; }
+.timeline--text .t-item--last .t-rail::after { display: none; }
+.subhead { display: block; font-size: clamp(24px, 2.6vw, 36px); font-weight: 600; letter-spacing: -.02em; line-height: 1.2; color: var(--text-2); margin-top: -6px; }
+
+.policy-group { margin-top: 88px; }
+.policy-group:first-child { margin-top: 64px; }
+.group-head { display: flex; align-items: baseline; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.group-head h3 { font-size: clamp(26px, 2.4vw, 34px); letter-spacing: -.02em; }
+.group-head span { font-size: 16px; font-weight: 600; letter-spacing: .12em; color: var(--text-3); }
+.policy-group .timeline { margin-top: 32px; }
+.policy-group--setback .group-head h3 { color: #ff6b4a; }
+.t-item--setback .t-rail .dot { background: transparent; box-shadow: inset 0 0 0 3px #ff6b4a; }
+.t-item--setback:hover .t-rail .dot, .t-item--setback.active .t-rail .dot, .t-item--setback:focus-visible .t-rail .dot { background: #ff6b4a; }
+.t-tag { display: inline-block; margin: 2px 0 14px; padding: 3px 10px; border-radius: 999px; border: 1px solid rgba(255, 107, 74, .5); color: #ff8a6e; font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; }
+.timeline--text .t-rail { margin-top: 0; }
+.t-year--big { font-size: clamp(44px, 4.4vw, 68px); letter-spacing: -.03em; }
+.t-item:hover .t-year--big, .t-item.active .t-year--big, .t-item:focus-visible .t-year--big { color: var(--glow); }
+.t-year--big { transition: color .35s ease; }
+
+.flag-grid { display: grid; gap: 16px; margin-top: 64px; }
+.flag-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.flag-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.flag-card { padding: 28px 28px 32px; }
+.flag-card .flag-fig { margin-bottom: 32px; }
+.flag-card h3 { font-size: clamp(26px, 2.2vw, 32px); letter-spacing: -.02em; margin: 0 0 6px; }
+.flag-card .meta { font-size: 16px; font-weight: 600; margin: 0 0 12px; }
+.flag-card .blurb { font-size: 17px; line-height: 1.5; color: var(--text-3); margin: 0; }
+
+.flag-grid--5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.sig-card { --card-bg: var(--bg); transition-property: opacity, transform, filter, background-color, box-shadow; }
+.sig-card:hover, .sig-card.active, .sig-card:focus-visible { --card-bg: var(--panel); }
+.sig-icon { width: 72px; height: 72px; display: block; margin-bottom: 28px; transition: transform .45s var(--ease); }
+.sig-card:hover .sig-icon, .sig-card:focus-visible .sig-icon { transform: scale(1.12) rotate(-4deg); }
+.sig-card h3 { font-size: clamp(22px, 1.8vw, 26px); }
+.flag-grid:has(.flag-card:focus-visible) .flag-card:not(:focus-visible):not(:hover) { filter: brightness(.38) saturate(.6); }
+.sig-card:focus-visible { background-color: var(--panel); box-shadow: 0 0 0 1px var(--line), 0 40px 90px -40px var(--glow); }
+.question { margin: 88px 0 0; font-size: clamp(32px, 3.6vw, 52px); font-weight: 700; letter-spacing: -.025em; line-height: 1.15; max-width: 1000px; }
+.question span { color: var(--text-3); }
+
+.band { display: flex; height: 6px; margin-top: 96px; border-radius: 3px; overflow: hidden; }
+.band span { flex: 1; }
+.js .band.reveal { opacity: 1; transform: scaleX(0); transform-origin: left; transition: transform 1.6s var(--ease); }
+.js .band.reveal.in { transform: none; }
+
+.statement { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+.statement .intro { grid-row: 1; grid-column: 1; }
+.statement .cell { grid-row: 1; grid-column: 2; }
+.statement h2 { font-size: clamp(36px, 4.6vw, 64px); }
+.venn { width: 100%; max-width: 520px; display: block; margin-left: auto; }
+.js .venn.reveal { transform: scale(.85) rotate(-12deg); transition-duration: 1.4s; }
+.js .venn.reveal.in { transform: none; }
+
+.resources { list-style: none; margin: 56px 0 0; padding: 0; border-bottom: 1px solid var(--line); }
+.resources li {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 24px;
+flex-wrap: wrap;
+padding: 30px 0;
+border-top: 1px solid var(--line);
+}
+.res-head { margin: 64px 0 0; font-size: 15px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--text-3); }
+.res-head + .resources { margin-top: 20px; }
+.resources .org { font-size: clamp(22px, 2.2vw, 30px); font-weight: 600; letter-spacing: -.01em; }
+.resources a { font-size: 18px; }
+.thanks { display: block; margin-top: 120px; font-size: clamp(32px, 3.4vw, 44px); font-weight: 700; letter-spacing: -.02em; }
+
+@media (max-width: 1100px) {
+.flag-grid--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.flag-grid--5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.timeline { grid-template-columns: 1fr; gap: 8px; }
+.t-item { display: grid; grid-template-columns: 200px 1fr; column-gap: 32px; align-items: center; }
+.t-item .t-flag { grid-row: 1 / span 4; }
+.t-rail { display: none; }
+.timeline--text .t-item { display: block; }
+.timeline--text { grid-template-columns: 1fr; }
+}
+@media (max-width: 820px) {
+.original, .statement { grid-template-columns: 1fr; }
+.statement .cell { grid-row: 1; grid-column: 1; }
+.statement .intro { grid-row: 2; }
+.venn { max-width: 300px; margin: 0 auto; }
+.flag-grid--3 { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+body { font-size: 17px; }
+.block { padding: 88px 16px; }
+.flag-grid--4 { grid-template-columns: 1fr; }
+.flag-grid--5 { grid-template-columns: 1fr; }
+.t-item { grid-template-columns: 120px 1fr; column-gap: 20px; padding: 20px; }
+.chips { grid-template-columns: 1fr 1fr; }
+.callout { width: 230px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+html { scroll-behavior: auto; }
+*, *::before, *::after { animation: none !important; transition-duration: 0s !important; transition-delay: 0s !important; }
+.hero-in { opacity: 1; }
+.js .reveal, .js .band.reveal, .js .venn.reveal { opacity: 1; transform: none; }
+.flag { transform: none !important; }
+}
+</style>
+</head>
+
+<body>
+
+
+
+
+
+<header class="hero">
+  <p class="eyebrow hero-in" style="--d:0ms">Showing Our Pride</p>
+  <h1 class="hero-in" style="--d:120ms">The History of the Pride Flag.</h1>
+  <div class="hero-bar hero-in" style="--d:260ms" aria-hidden="true"><span style="background:#FF69B4"></span><span style="background:#E40303"></span><span style="background:#FF8C00"></span><span style="background:#FFED00"></span><span style="background:#008026"></span><span style="background:#00C0C0"></span><span style="background:#24408E"></span><span style="background:#732982"></span></div>
+  <p class="byline hero-in" style="--d:380ms">Grace O&#39;Malley · October 2026</p>
+  <a class="scroll-cue hero-in" style="--d:700ms" href="#milestones" aria-label="Scroll to begin">
+    <span>Scroll</span><svg viewbox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" /></svg></a>
+</header>
+<div id="milestones" class="block block--wide">
+<div class="intro reveal">
+<p><span class="eyebrow">1969–1977 · Before the flag</span></p>
+<h2 id="before-the-flag.">Before the flag.</h2>
+<p><span class="subhead">We don’t have rights, but we do have pride.</span></p>
+</div>
+<ol class="timeline timeline--text" style="--cols:3"><li class="t-item reveal" style="--d:0ms;--glow:#E40303" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">1969</p>
+    <h3>Stonewall uprising</h3>
+    <p class="t-text">Police raided the Stonewall Inn in New York&#39;s Greenwich Village on June 28. Patrons and neighbors fought back, sparking nights of protest.</p>
+  </li><li class="t-item reveal" style="--d:90ms;--glow:#FF8C00" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">1970</p>
+    <h3>The first domestic Pride marches</h3>
+    <p class="t-text">On Stonewall&#39;s first anniversary, marches and gatherings took place in New York, Chicago, Los Angeles and San Francisco.</p>
+  </li><li class="t-item reveal t-item--last" style="--d:180ms;--glow:#FFED00" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">1971</p>
+    <h3>Pride comes to Canada</h3>
+    <p class="t-text">Toronto&#39;s Gay Day picnic on August 1; two years later, Vancouver, Winnipeg and four other cities held Canada&#39;s first Pride Week.</p>
+  </li><li class="t-item reveal" style="--d:0ms;--glow:#00A63E" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">1972</p>
+    <h3>The first Pride in England</h3>
+    <p class="t-text">London held England&#39;s first Pride march on July 1, 1972.</p>
+  </li><li class="t-item reveal" style="--d:90ms;--glow:#5BCEFA" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">1977</p>
+    <h3>Renée Richards</h3>
+    <p class="t-text">A New York Supreme Court ruling let Renée Richards, a transgender woman, compete in the women&#39;s US Open.</p>
+  </li><li class="t-item reveal t-item--last" style="--d:180ms;--glow:#FF69B4" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">1977</p>
+    <h3>Harvey Milk elected</h3>
+    <p class="t-text">Elected to San Francisco&#39;s Board of Supervisors, he became the first openly gay elected official in California.</p>
+  </li></ol>
+</div>
+<div id="original" class="block">
+<div class="intro reveal">
+<p><span class="eyebrow">1978 · The original</span></p>
+<h2 id="where-it-all-began.">Where it all began.</h2>
+<p>Debuted June 25, 1978, at San Francisco’s Gay Freedom Day Parade. Designed by <strong>Gilbert Baker</strong> with the encouragement of <strong>Harvey Milk</strong>, each of its eight stripes carried a meaning.</p>
+<p><span class="hint">Select a stripe to see what it stands for.</span></p>
+</div>
+<div class="original reveal">
+  <figure class="flag-fig flag-fig--hero"><svg class="flag" viewbox="0 0 300 180" role="group" aria-label="The original eight-stripe rainbow flag. Select a stripe to see its meaning." xmlns="http://www.w3.org/2000/svg"><rect class="stripe" id="original-0" x="0" y="0.00" width="300" height="22.90" fill="#FF69B4" tabindex="0" role="button" aria-label="Hot pink stripe: represents sex" data-name="Hot pink" data-meaning="Represents sex." /><rect class="stripe" id="original-1" x="0" y="22.50" width="300" height="22.90" fill="#E40303" tabindex="0" role="button" aria-label="Red stripe: represents life" data-name="Red" data-meaning="Represents life." /><rect class="stripe" id="original-2" x="0" y="45.00" width="300" height="22.90" fill="#FF8C00" tabindex="0" role="button" aria-label="Orange stripe: represents healing" data-name="Orange" data-meaning="Represents healing." /><rect class="stripe" id="original-3" x="0" y="67.50" width="300" height="22.90" fill="#FFED00" tabindex="0" role="button" aria-label="Yellow stripe: represents sunlight" data-name="Yellow" data-meaning="Represents sunlight." /><rect class="stripe" id="original-4" x="0" y="90.00" width="300" height="22.90" fill="#008026" tabindex="0" role="button" aria-label="Green stripe: represents nature" data-name="Green" data-meaning="Represents nature." /><rect class="stripe" id="original-5" x="0" y="112.50" width="300" height="22.90" fill="#00C0C0" tabindex="0" role="button" aria-label="Turquoise stripe: represents magic and art" data-name="Turquoise" data-meaning="Represents magic and art." /><rect class="stripe" id="original-6" x="0" y="135.00" width="300" height="22.90" fill="#24408E" tabindex="0" role="button" aria-label="Indigo stripe: represents serenity" data-name="Indigo" data-meaning="Represents serenity." /><rect class="stripe" id="original-7" x="0" y="157.50" width="300" height="22.90" fill="#732982" tabindex="0" role="button" aria-label="Violet stripe: represents spirit" data-name="Violet" data-meaning="Represents spirit." /></svg></figure>
+  <ul class="chips" aria-label="Stripe meanings"><li><button class="chip" type="button" data-stripe="original-0"><span class="sw" style="background:#FF69B4"></span>Sex</button></li><li><button class="chip" type="button" data-stripe="original-1"><span class="sw" style="background:#E40303"></span>Life</button></li><li><button class="chip" type="button" data-stripe="original-2"><span class="sw" style="background:#FF8C00"></span>Healing</button></li><li><button class="chip" type="button" data-stripe="original-3"><span class="sw" style="background:#FFED00"></span>Sunlight</button></li><li><button class="chip" type="button" data-stripe="original-4"><span class="sw" style="background:#008026"></span>Nature</button></li><li><button class="chip" type="button" data-stripe="original-5"><span class="sw" style="background:#00C0C0"></span>Magic and art</button></li><li><button class="chip" type="button" data-stripe="original-6"><span class="sw" style="background:#24408E"></span>Serenity</button></li><li><button class="chip" type="button" data-stripe="original-7"><span class="sw" style="background:#732982"></span>Spirit</button></li></ul>
+</div>
+</div>
+<div id="evolution" class="block block--wide">
+<div class="intro reveal">
+<p><span class="eyebrow">Evolution</span></p>
+<h2 id="from-eight-stripes-to-many.">From eight stripes to many.</h2>
+</div>
+<ol class="timeline"><li class="t-item reveal" style="--d:0ms;--glow:#004DFF" tabindex="0">
+    <div class="t-flag"><svg class="flag" viewbox="0 0 300 180" role="img" aria-label="Six stripes flag" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0.00" width="300" height="30.40" fill="#E40303" /><rect x="0" y="30.00" width="300" height="30.40" fill="#FF8C00" /><rect x="0" y="60.00" width="300" height="30.40" fill="#FFED00" /><rect x="0" y="90.00" width="300" height="30.40" fill="#008026" /><rect x="0" y="120.00" width="300" height="30.40" fill="#004DFF" /><rect x="0" y="150.00" width="300" height="30.40" fill="#732982" /></svg></div>
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year">1978–79</p>
+    <h3>Six stripes</h3>
+    <p class="t-text">Pink dropped (fabric was scarce), then turquoise, so the colors split evenly; indigo became royal blue.</p>
+  </li><li class="t-item reveal" style="--d:90ms;--glow:#784F17" tabindex="0">
+    <div class="t-flag"><svg class="flag" viewbox="0 0 300 180" role="img" aria-label="Philadelphia flag" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0.00" width="300" height="22.90" fill="#1c1c1e" /><rect x="0" y="22.50" width="300" height="22.90" fill="#784F17" /><rect x="0" y="45.00" width="300" height="22.90" fill="#E40303" /><rect x="0" y="67.50" width="300" height="22.90" fill="#FF8C00" /><rect x="0" y="90.00" width="300" height="22.90" fill="#FFED00" /><rect x="0" y="112.50" width="300" height="22.90" fill="#008026" /><rect x="0" y="135.00" width="300" height="22.90" fill="#004DFF" /><rect x="0" y="157.50" width="300" height="22.90" fill="#732982" /></svg></div>
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year">2017</p>
+    <h3>Philadelphia</h3>
+    <p class="t-text">Black and brown stripes added for queer people of color.</p>
+  </li><li class="t-item reveal" style="--d:180ms;--glow:#5BCEFA" tabindex="0">
+    <div class="t-flag"><svg class="flag" viewbox="0 0 300 180" role="img" aria-label="Progress Pride flag" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0.00" width="300" height="30.40" fill="#E40303" /><rect x="0" y="30.00" width="300" height="30.40" fill="#FF8C00" /><rect x="0" y="60.00" width="300" height="30.40" fill="#FFED00" /><rect x="0" y="90.00" width="300" height="30.40" fill="#008026" /><rect x="0" y="120.00" width="300" height="30.40" fill="#004DFF" /><rect x="0" y="150.00" width="300" height="30.40" fill="#732982" /><polygon points="0,0 56,0 146.0,90.0 56,180 0,180" fill="#1c1c1e"></polygon><polygon points="0,0 42,0 132.0,90.0 42,180 0,180" fill="#784F17"></polygon><polygon points="0,0 28,0 118.0,90.0 28,180 0,180" fill="#5BCEFA"></polygon><polygon points="0,0 14,0 104.0,90.0 14,180 0,180" fill="#F5A9B8"></polygon><polygon points="0,0 90.0,90.0 0,180" fill="#FFFFFF"></polygon></svg></div>
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year">2018</p>
+    <h3>Progress Pride</h3>
+    <p class="t-text">Daniel Quasar&#39;s chevron: black and brown for communities of color, plus the trans flag&#39;s blue, pink and white.</p>
+  </li><li class="t-item reveal" style="--d:270ms;--glow:#FFD800" tabindex="0">
+    <div class="t-flag"><svg class="flag" viewbox="0 0 300 180" role="img" aria-label="Intersex inclusive flag" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0.00" width="300" height="30.40" fill="#E40303" /><rect x="0" y="30.00" width="300" height="30.40" fill="#FF8C00" /><rect x="0" y="60.00" width="300" height="30.40" fill="#FFED00" /><rect x="0" y="90.00" width="300" height="30.40" fill="#008026" /><rect x="0" y="120.00" width="300" height="30.40" fill="#004DFF" /><rect x="0" y="150.00" width="300" height="30.40" fill="#732982" /><polygon points="0,0 70,0 160.0,90.0 70,180 0,180" fill="#1c1c1e"></polygon><polygon points="0,0 56,0 146.0,90.0 56,180 0,180" fill="#784F17"></polygon><polygon points="0,0 42,0 132.0,90.0 42,180 0,180" fill="#5BCEFA"></polygon><polygon points="0,0 28,0 118.0,90.0 28,180 0,180" fill="#F5A9B8"></polygon><polygon points="0,0 14,0 104.0,90.0 14,180 0,180" fill="#FFFFFF"></polygon><polygon points="0,0 90.0,90.0 0,180" fill="#FFD800"></polygon><circle cx="38" cy="90.0" r="15" fill="none" stroke="#7902AA" stroke-width="5"></circle></svg></div>
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year">2021</p>
+    <h3>Intersex inclusive</h3>
+    <p class="t-text">Valentino Vecchietti added the intersex flag&#39;s yellow triangle and purple circle.</p>
+  </li><li class="t-item t-item--last reveal" style="--d:360ms;--glow:#FF218C" tabindex="0">
+    <div class="t-flag"><svg class="flag" viewbox="0 0 300 180" role="img" aria-label="A family of flags flag" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0.00" width="146" height="17.30" fill="#5BCEFA" /><rect x="0" y="17.00" width="146" height="17.30" fill="#F5A9B8" /><rect x="0" y="34.00" width="146" height="17.30" fill="#FFFFFF" /><rect x="0" y="51.00" width="146" height="17.30" fill="#F5A9B8" /><rect x="0" y="68.00" width="146" height="17.30" fill="#5BCEFA" /><rect x="154" y="0.00" width="146" height="21.55" fill="#FCF434" /><rect x="154" y="21.25" width="146" height="21.55" fill="#FFFFFF" /><rect x="154" y="42.50" width="146" height="21.55" fill="#9C59D1" /><rect x="154" y="63.75" width="146" height="21.55" fill="#2C2C2C" /><rect x="0" y="95.00" width="146" height="34.30" fill="#D60270" /><rect x="0" y="129.00" width="146" height="17.30" fill="#9B4F96" /><rect x="0" y="146.00" width="146" height="34.30" fill="#0038A8" /><rect x="154" y="95.00" width="146" height="28.63" fill="#FF218C" /><rect x="154" y="123.33" width="146" height="28.63" fill="#FFD800" /><rect x="154" y="151.67" width="146" height="28.63" fill="#21B1FF" /></svg></div>
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year">Today</p>
+    <h3>A family of flags</h3>
+    <p class="t-text">Communities design their own flags to name and celebrate their identities.</p>
+  </li></ol>
+<div class="band reveal" aria-hidden="true"><span style="background:#FFD800"></span><span style="background:#7902AA"></span><span style="background:#FFFFFF"></span><span style="background:#F5A9B8"></span><span style="background:#5BCEFA"></span><span style="background:#784F17"></span><span style="background:#3a3a3c"></span><span style="background:#E40303"></span><span style="background:#FF8C00"></span><span style="background:#FFED00"></span><span style="background:#008026"></span><span style="background:#004DFF"></span><span style="background:#732982"></span></div>
+</div>
+<div id="gender" class="block block--wide">
+<div class="intro reveal">
+<p><span class="eyebrow">Gender identity</span></p>
+<h2 id="who-we-are.">Who we are.</h2>
+<p><span class="hint">Select a stripe to see what it stands for.</span></p>
+</div>
+<div class="flag-grid flag-grid--3"><article class="flag-card reveal" style="--d:0ms;--glow:#5BCEFA">
+    <figure class="flag-fig"><svg class="flag" viewbox="0 0 300 180" role="group" aria-label="Transgender flag. Select a stripe to see its meaning." xmlns="http://www.w3.org/2000/svg"><rect class="stripe" id="trans-0" x="0" y="0.00" width="300" height="36.40" fill="#5BCEFA" tabindex="0" role="button" aria-label="Light blue stripe: represents boys and men" data-name="Light blue" data-meaning="Represents boys and men." /><rect class="stripe" id="trans-1" x="0" y="36.00" width="300" height="36.40" fill="#F5A9B8" tabindex="0" role="button" aria-label="Pink stripe: represents girls and women" data-name="Pink" data-meaning="Represents girls and women." /><rect class="stripe" id="trans-2" x="0" y="72.00" width="300" height="36.40" fill="#FFFFFF" tabindex="0" role="button" aria-label="White stripe: represents people who are intersex, transitioning, or have a neutral or undefined gender" data-name="White" data-meaning="Represents people who are intersex, transitioning, or have a neutral or undefined gender." /><rect class="stripe" id="trans-3" x="0" y="108.00" width="300" height="36.40" fill="#F5A9B8" tabindex="0" role="button" aria-label="Pink stripe: represents girls and women" data-name="Pink" data-meaning="Represents girls and women." /><rect class="stripe" id="trans-4" x="0" y="144.00" width="300" height="36.40" fill="#5BCEFA" tabindex="0" role="button" aria-label="Light blue stripe: represents boys and men" data-name="Light blue" data-meaning="Represents boys and men." /></svg></figure>
+    <h3>Transgender</h3>
+    <p class="meta" style="color:#5BCEFA">Monica Helms · 1999</p>
+    <p class="blurb">For people whose gender identity differs from what&#39;s culturally expected based on the sex they were assigned at birth. It&#39;s an umbrella term that says nothing about who someone is attracted to, and it encompasses people at all stages of their transition—socially or medically.</p>
+  </article><article class="flag-card reveal" style="--d:90ms;--glow:#B57EDC">
+    <figure class="flag-fig"><svg class="flag" viewbox="0 0 300 180" role="group" aria-label="Genderqueer flag. Select a stripe to see its meaning." xmlns="http://www.w3.org/2000/svg"><rect class="stripe" id="genderqueer-0" x="0" y="0.00" width="300" height="60.40" fill="#B57EDC" tabindex="0" role="button" aria-label="Lavender stripe: represents androgyny" data-name="Lavender" data-meaning="Represents androgyny." /><rect class="stripe" id="genderqueer-1" x="0" y="60.00" width="300" height="60.40" fill="#FFFFFF" tabindex="0" role="button" aria-label="White stripe: represents agender identities" data-name="White" data-meaning="Represents agender identities." /><rect class="stripe" id="genderqueer-2" x="0" y="120.00" width="300" height="60.40" fill="#4A8123" tabindex="0" role="button" aria-label="Green stripe: represents identities outside the gender binary" data-name="Green" data-meaning="Represents identities outside the gender binary." /></svg></figure>
+    <h3>Genderqueer</h3>
+    <p class="meta" style="color:#B57EDC">Marilyn Roxie · 2011</p>
+    <p class="blurb">For people who reject fixed categories of gender and embrace its fluidity. Genderqueer people may see themselves as both male and female, neither, or entirely outside those categories.</p>
+  </article><article class="flag-card reveal" style="--d:180ms;--glow:#FCF434">
+    <figure class="flag-fig"><svg class="flag" viewbox="0 0 300 180" role="group" aria-label="Non-binary flag. Select a stripe to see its meaning." xmlns="http://www.w3.org/2000/svg"><rect class="stripe" id="nonbinary-0" x="0" y="0.00" width="300" height="45.40" fill="#FCF434" tabindex="0" role="button" aria-label="Yellow stripe: represents people whose gender exists outside the binary" data-name="Yellow" data-meaning="Represents people whose gender exists outside the binary." /><rect class="stripe" id="nonbinary-1" x="0" y="45.00" width="300" height="45.40" fill="#FFFFFF" tabindex="0" role="button" aria-label="White stripe: represents people with many or all genders" data-name="White" data-meaning="Represents people with many or all genders." /><rect class="stripe" id="nonbinary-2" x="0" y="90.00" width="300" height="45.40" fill="#9C59D1" tabindex="0" role="button" aria-label="Purple stripe: represents people whose gender is a mix of, or between, binary genders" data-name="Purple" data-meaning="Represents people whose gender is a mix of, or between, binary genders." /><rect class="stripe" id="nonbinary-3" x="0" y="135.00" width="300" height="45.40" fill="#2C2C2C" tabindex="0" role="button" aria-label="Black stripe: represents people who feel they have no gender" data-name="Black" data-meaning="Represents people who feel they have no gender." /></svg></figure>
+    <h3>Non-binary</h3>
+    <p class="meta" style="color:#FCF434">Kye Rowan · 2014</p>
+    <p class="blurb">For people who don&#39;t identify only as a man or a woman. They may be both, somewhere in between, or outside those categories entirely. It&#39;s also an umbrella for identities like agender, bigender and gender-fluid.</p>
+  </article></div>
+<div class="band reveal" aria-hidden="true"><span style="background:#5BCEFA"></span><span style="background:#F5A9B8"></span><span style="background:#FFFFFF"></span><span style="background:#F5A9B8"></span><span style="background:#5BCEFA"></span><span style="background:#B57EDC"></span><span style="background:#FFFFFF"></span><span style="background:#4A8123"></span><span style="background:#FCF434"></span><span style="background:#FFFFFF"></span><span style="background:#9C59D1"></span><span style="background:#2C2C2C"></span></div>
+</div>
+<div id="orientation" class="block block--wide">
+<div class="intro reveal">
+<p><span class="eyebrow">Sexual orientation</span></p>
+<h2 id="who-we-love.">Who we love.</h2>
+<p><span class="hint">Select a stripe to see what it stands for.</span></p>
+</div>
+<div class="flag-grid flag-grid--4"><article class="flag-card reveal" style="--d:0ms;--glow:#F06AAE">
+    <figure class="flag-fig"><svg class="flag" viewbox="0 0 300 180" role="group" aria-label="Bisexual flag. Select a stripe to see its meaning." xmlns="http://www.w3.org/2000/svg"><rect class="stripe" id="bisexual-0" x="0" y="0.00" width="300" height="72.40" fill="#D60270" tabindex="0" role="button" aria-label="Pink stripe: represents attraction to the same gender" data-name="Pink" data-meaning="Represents attraction to the same gender." /><rect class="stripe" id="bisexual-1" x="0" y="72.00" width="300" height="36.40" fill="#9B4F96" tabindex="0" role="button" aria-label="Purple stripe: represents attraction to more than one gender, where pink and blue overlap" data-name="Purple" data-meaning="Represents attraction to more than one gender, where pink and blue overlap." /><rect class="stripe" id="bisexual-2" x="0" y="108.00" width="300" height="72.40" fill="#0038A8" tabindex="0" role="button" aria-label="Blue stripe: represents attraction to different genders" data-name="Blue" data-meaning="Represents attraction to different genders." /></svg></figure>
+    <h3>Bisexual</h3>
+    <p class="meta" style="color:#F06AAE">Michael Page · 1998</p>
+    <p class="blurb">For people attracted to more than one gender, though not necessarily at the same time, in the same way or to the same degree.</p>
+  </article><article class="flag-card reveal" style="--d:90ms;--glow:#21B1FF">
+    <figure class="flag-fig"><svg class="flag" viewbox="0 0 300 180" role="group" aria-label="Pansexual flag. Select a stripe to see its meaning." xmlns="http://www.w3.org/2000/svg"><rect class="stripe" id="pansexual-0" x="0" y="0.00" width="300" height="60.40" fill="#FF218C" tabindex="0" role="button" aria-label="Pink stripe: represents attraction to women" data-name="Pink" data-meaning="Represents attraction to women." /><rect class="stripe" id="pansexual-1" x="0" y="60.00" width="300" height="60.40" fill="#FFD800" tabindex="0" role="button" aria-label="Yellow stripe: represents attraction to non-binary people and other genders" data-name="Yellow" data-meaning="Represents attraction to non-binary people and other genders." /><rect class="stripe" id="pansexual-2" x="0" y="120.00" width="300" height="60.40" fill="#21B1FF" tabindex="0" role="button" aria-label="Blue stripe: represents attraction to men" data-name="Blue" data-meaning="Represents attraction to men." /></svg></figure>
+    <h3>Pansexual</h3>
+    <p class="meta" style="color:#21B1FF">Shared online · 2010</p>
+    <p class="blurb">For people who can be attracted to people of any gender. Some people use pansexual and bisexual interchangeably.</p>
+  </article><article class="flag-card reveal" style="--d:180ms;--glow:#FF9A56">
+    <figure class="flag-fig"><svg class="flag" viewbox="0 0 300 180" role="group" aria-label="Lesbian flag. Select a stripe to see its meaning." xmlns="http://www.w3.org/2000/svg"><rect class="stripe" id="lesbian-0" x="0" y="0.00" width="300" height="26.11" fill="#D52D00" tabindex="0" role="button" aria-label="Dark orange stripe: represents gender nonconformity" data-name="Dark orange" data-meaning="Represents gender nonconformity." /><rect class="stripe" id="lesbian-1" x="0" y="25.71" width="300" height="26.11" fill="#EF7627" tabindex="0" role="button" aria-label="Orange stripe: represents independence" data-name="Orange" data-meaning="Represents independence." /><rect class="stripe" id="lesbian-2" x="0" y="51.43" width="300" height="26.11" fill="#FF9A56" tabindex="0" role="button" aria-label="Light orange stripe: represents community" data-name="Light orange" data-meaning="Represents community." /><rect class="stripe" id="lesbian-3" x="0" y="77.14" width="300" height="26.11" fill="#FFFFFF" tabindex="0" role="button" aria-label="White stripe: represents unique relationships to womanhood" data-name="White" data-meaning="Represents unique relationships to womanhood." /><rect class="stripe" id="lesbian-4" x="0" y="102.86" width="300" height="26.11" fill="#D162A4" tabindex="0" role="button" aria-label="Pink stripe: represents serenity and peace" data-name="Pink" data-meaning="Represents serenity and peace." /><rect class="stripe" id="lesbian-5" x="0" y="128.57" width="300" height="26.11" fill="#B55690" tabindex="0" role="button" aria-label="Dusty pink stripe: represents love and sex" data-name="Dusty pink" data-meaning="Represents love and sex." /><rect class="stripe" id="lesbian-6" x="0" y="154.29" width="300" height="26.11" fill="#A30262" tabindex="0" role="button" aria-label="Dark rose stripe: represents femininity" data-name="Dark rose" data-meaning="Represents femininity." /></svg></figure>
+    <h3>Lesbian</h3>
+    <p class="meta" style="color:#FF9A56">Emily Gwen · 2018</p>
+    <p class="blurb">For women who are emotionally, romantically or sexually attracted to other women. Some non-binary people use the term for themselves too.</p>
+  </article><article class="flag-card reveal" style="--d:270ms;--glow:#26CEAA">
+    <figure class="flag-fig"><svg class="flag" viewbox="0 0 300 180" role="group" aria-label="Gay men flag. Select a stripe to see its meaning." xmlns="http://www.w3.org/2000/svg"><rect class="stripe" id="gay_men-0" x="0" y="0.00" width="300" height="26.11" fill="#078D70" tabindex="0" role="button" aria-label="Dark green stripe: represents community" data-name="Dark green" data-meaning="Represents community." /><rect class="stripe" id="gay_men-1" x="0" y="25.71" width="300" height="26.11" fill="#26CEAA" tabindex="0" role="button" aria-label="Teal stripe: represents healing" data-name="Teal" data-meaning="Represents healing." /><rect class="stripe" id="gay_men-2" x="0" y="51.43" width="300" height="26.11" fill="#98E8C1" tabindex="0" role="button" aria-label="Light green stripe: represents joy" data-name="Light green" data-meaning="Represents joy." /><rect class="stripe" id="gay_men-3" x="0" y="77.14" width="300" height="26.11" fill="#FFFFFF" tabindex="0" role="button" aria-label="White stripe: represents gender-nonconforming, non-binary and trans men" data-name="White" data-meaning="Represents gender-nonconforming, non-binary and trans men." /><rect class="stripe" id="gay_men-4" x="0" y="102.86" width="300" height="26.11" fill="#7BADE2" tabindex="0" role="button" aria-label="Light blue stripe: represents pure love" data-name="Light blue" data-meaning="Represents pure love." /><rect class="stripe" id="gay_men-5" x="0" y="128.57" width="300" height="26.11" fill="#5049CC" tabindex="0" role="button" aria-label="Blue-violet stripe: represents fortitude" data-name="Blue-violet" data-meaning="Represents fortitude." /><rect class="stripe" id="gay_men-6" x="0" y="154.29" width="300" height="26.11" fill="#3D1A78" tabindex="0" role="button" aria-label="Indigo stripe: represents diversity" data-name="Indigo" data-meaning="Represents diversity." /></svg></figure>
+    <h3>Gay men</h3>
+    <p class="meta" style="color:#26CEAA">Popularized online · 2019</p>
+    <p class="blurb">For men who are emotionally, romantically or sexually attracted to other men. That includes trans and non-binary men, whom the flag&#39;s white stripe names directly.</p>
+  </article></div>
+<div class="band reveal" aria-hidden="true"><span style="background:#D60270"></span><span style="background:#9B4F96"></span><span style="background:#0038A8"></span><span style="background:#FF218C"></span><span style="background:#FFD800"></span><span style="background:#21B1FF"></span><span style="background:#D52D00"></span><span style="background:#EF7627"></span><span style="background:#FF9A56"></span><span style="background:#FFFFFF"></span><span style="background:#D162A4"></span><span style="background:#B55690"></span><span style="background:#A30262"></span><span style="background:#078D70"></span><span style="background:#26CEAA"></span><span style="background:#98E8C1"></span><span style="background:#FFFFFF"></span><span style="background:#7BADE2"></span><span style="background:#5049CC"></span><span style="background:#3D1A78"></span></div>
+</div>
+<div id="policy" class="block block--wide">
+<div class="intro reveal">
+<p><span class="eyebrow">1987–2026</span></p>
+<h2 id="from-pride-to-policy.">From pride to policy.</h2>
+</div>
+<div class="policy-group">
+  <div class="group-head reveal"><h3>Progress</h3><span>1987–2004</span></div>
+  <ol class="timeline timeline--text" style="--cols:5"><li class="t-item reveal" style="--d:0ms;--glow:#E40303" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">1987</p>
+    <h3>Barney Frank comes out</h3>
+    <p class="t-text">The Massachusetts congressman becomes the first member of Congress to come out voluntarily.</p>
+  </li><li class="t-item reveal" style="--d:90ms;--glow:#FF8C00" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">1994</p>
+    <h3>LGBTQ History Month</h3>
+    <p class="t-text">Rodney Wilson, a high school history teacher in Missouri, founds the month, observed each October.</p>
+  </li><li class="t-item reveal" style="--d:180ms;--glow:#FFED00" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">1999</p>
+    <h3>Pride Month</h3>
+    <p class="t-text">President Bill Clinton proclaims June as Gay and Lesbian Pride Month.</p>
+  </li><li class="t-item reveal" style="--d:270ms;--glow:#00A63E" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2001</p>
+    <h3>The Netherlands</h3>
+    <p class="t-text">The first country to legalize same-sex marriage.</p>
+  </li><li class="t-item reveal t-item--last" style="--d:360ms;--glow:#3D7BFF" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2004</p>
+    <h3>Massachusetts</h3>
+    <p class="t-text">The first US state to legalize same-sex marriage.</p>
+  </li></ol>
+</div><div class="policy-group">
+  <div class="group-head reveal"><h3>Victories</h3><span>2011–2024</span></div>
+  <ol class="timeline timeline--text" style="--cols:4"><li class="t-item reveal" style="--d:0ms;--glow:#9B5CD6" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2011</p>
+    <h3>Don&#39;t Ask, Don&#39;t Tell repealed</h3>
+    <p class="t-text">Lesbian, gay and bisexual people can serve openly in the US military.</p>
+  </li><li class="t-item reveal" style="--d:90ms;--glow:#FF8C00" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2012</p>
+    <h3>Tammy Baldwin elected</h3>
+    <p class="t-text">Wisconsin&#39;s Tammy Baldwin becomes the first openly gay person elected to the US Senate.</p>
+  </li><li class="t-item reveal" style="--d:180ms;--glow:#00A63E" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2012</p>
+    <h3>Mark Takano elected</h3>
+    <p class="t-text">California&#39;s Mark Takano becomes the first openly LGBTQ Asian American in Congress.</p>
+  </li><li class="t-item reveal t-item--last" style="--d:270ms;--glow:#5BCEFA" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2015</p>
+    <h3>Obergefell v. Hodges</h3>
+    <p class="t-text">The Supreme Court legalizes same-sex marriage nationwide.</p>
+  </li><li class="t-item reveal" style="--d:0ms;--glow:#F5A9B8" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2016</p>
+    <h3>Stonewall National Monument</h3>
+    <p class="t-text">President Barack Obama designates the Stonewall Inn area a national monument.</p>
+  </li><li class="t-item reveal" style="--d:90ms;--glow:#f5f5f7" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2020</p>
+    <h3>Bostock v. Clayton County</h3>
+    <p class="t-text">The Supreme Court rules that the 1964 Civil Rights Act&#39;s ban on job discrimination covers sexual orientation and gender identity.</p>
+  </li><li class="t-item reveal" style="--d:180ms;--glow:#C08A4A" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2020</p>
+    <h3>Ritchie Torres and Mondaire Jones elected</h3>
+    <p class="t-text">The New York congressmen become the first openly gay Black members of Congress.</p>
+  </li><li class="t-item reveal t-item--last" style="--d:270ms;--glow:#FFED00" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2024</p>
+    <h3>Sarah McBride elected</h3>
+    <p class="t-text">Delaware&#39;s Sarah McBride becomes the first openly transgender person elected to Congress.</p>
+  </li></ol>
+</div><div class="policy-group policy-group--setback">
+  <div class="group-head reveal"><h3>Setbacks</h3><span>2018–2026</span></div>
+  <ol class="timeline timeline--text" style="--cols:5"><li class="t-item reveal t-item--setback" style="--d:0ms;--glow:#ff6b4a" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2018</p><span class="t-tag">Setback</span>
+    <h3>Military ban reinstated</h3>
+    <p class="t-text">President Trump&#39;s ban on transgender service members is issued; it takes effect in 2019, and a new ban follows in 2025.</p>
+  </li><li class="t-item reveal t-item--setback" style="--d:90ms;--glow:#ff6b4a" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2025</p><span class="t-tag">Setback</span>
+    <h3>&quot;One Flag&quot; policy</h3>
+    <p class="t-text">A State Department policy bars Pride flags at US embassies.</p>
+  </li><li class="t-item reveal t-item--setback" style="--d:180ms;--glow:#ff6b4a" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2025</p><span class="t-tag">Setback</span>
+    <h3>Gender-affirming care</h3>
+    <p class="t-text">27 states restrict gender-affirming care for minors; the Supreme Court upholds Tennessee&#39;s ban.</p>
+  </li><li class="t-item reveal t-item--setback" style="--d:270ms;--glow:#ff6b4a" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2026</p><span class="t-tag">Setback</span>
+    <h3>Stonewall&#39;s flag</h3>
+    <p class="t-text">The Park Service removes the Pride flag from Stonewall National Monument; it&#39;s restored in April after a lawsuit.</p>
+  </li><li class="t-item reveal t-item--setback t-item--last" style="--d:360ms;--glow:#ff6b4a" tabindex="0">
+    <div class="t-rail" aria-hidden="true"><span class="dot"></span></div>
+    <p class="t-year t-year--big">2026</p><span class="t-tag">Setback</span>
+    <h3>Attacks on LGBTQ+ youth</h3>
+    <p class="t-text">The Supreme Court upholds trans sports bans and rules that talk-therapy conversion bans face strict First Amendment scrutiny.</p>
+  </li></ol>
+</div>
+</div>
+<div id="intersectionality" class="block statement">
+<svg class="venn reveal" viewbox="0 0 600 600" aria-hidden="true"><circle cx="220" cy="220" r="180" fill="#FF218C" fill-opacity="0.7"></circle><circle cx="380" cy="220" r="180" fill="#FFD800" fill-opacity="0.6"></circle><circle cx="300" cy="370" r="180" fill="#21B1FF" fill-opacity="0.65"></circle></svg>
+<div class="intro reveal">
+<p><span class="eyebrow">Intersectionality</span></p>
+<h2 id="the-parts-of-who-we-are-overlap-and-create-experiences-all-their-own.">The parts of who we are overlap — and create experiences all their own.</h2>
+<p>The LGBTQ+ community gives people language for their intersecting identities and a place to celebrate them together, not in isolation. We aren’t free of prejudice, so we keep learning about each other, stay open to new ideas, and fight for the liberation of the whole community.</p>
+</div>
+</div>
+<div id="flagging" class="block block--wide">
+<div class="intro reveal">
+<p><span class="eyebrow">Just for fun · Flagging</span></p>
+<h2 id="signals-in-plain-sight.">Signals in plain sight.</h2>
+</div>
+<div class="flag-grid flag-grid--5"><article class="flag-card sig-card reveal" style="--d:0ms;--glow:#34C759" tabindex="0">
+    <svg class="sig-icon" viewbox="0 0 96 96" aria-hidden="true"><path d="M48 50 L48 92" stroke="#2f7d3c" stroke-width="4" fill="none" /><path d="M48 76 Q30 66 24 74 Q36 82 48 76Z" fill="#2f7d3c" /><circle cx="36" cy="32" r="14" fill="#2AA84A"></circle><circle cx="60" cy="32" r="14" fill="#2AA84A"></circle><circle cx="48" cy="20" r="14" fill="#34C759"></circle><circle cx="38" cy="44" r="13" fill="#34C759"></circle><circle cx="58" cy="44" r="13" fill="#2AA84A"></circle><circle cx="48" cy="34" r="12" fill="#5EDB7C"></circle></svg>
+    <h3>Green carnation</h3>
+    <p class="blurb">Oscar Wilde had friends wear them to his 1892 premiere, and they became a quiet signal.</p>
+  </article><article class="flag-card sig-card reveal" style="--d:80ms;--glow:#FF6B6B" tabindex="0">
+    <svg class="sig-icon" viewbox="0 0 96 96" aria-hidden="true"><path d="M18 18 H78 A8 8 0 0 1 86 26 V58 A8 8 0 0 1 78 66 H46 L30 82 V66 H18 A8 8 0 0 1 10 58 V26 A8 8 0 0 1 18 18 Z" fill="none" stroke="#FF6B6B" stroke-width="5" stroke-linejoin="round" /><circle cx="32" cy="42" r="5" fill="#FF6B6B"></circle><circle cx="48" cy="42" r="5" fill="#FF6B6B"></circle><circle cx="64" cy="42" r="5" fill="#FF6B6B"></circle></svg>
+    <h3>“Friend of Dorothy”</h3>
+    <p class="blurb">1930s–40s slang for a gay man. Dorothy may be Oz’s heroine, or Dorothy Parker.</p>
+  </article><article class="flag-card sig-card reveal" style="--d:160ms;--glow:#5BCEFA" tabindex="0">
+    <svg class="sig-icon" viewbox="0 0 96 96" aria-hidden="true"><path d="M30 46 L40 14 L50 32 L62 12 L68 46 Z" fill="#5BCEFA" /><path d="M16 44 H80 V80 A8 8 0 0 1 72 88 H24 A8 8 0 0 1 16 80 Z" fill="var(--card-bg, #0a0a0a)" stroke="#a1a1a6" stroke-width="4" stroke-linejoin="round" /><path d="M16 54 H80" stroke="#a1a1a6" stroke-width="2" stroke-dasharray="4 4" /></svg>
+    <h3>The hanky code</h3>
+    <p class="blurb">In the 1970s, a colored hanky in a back pocket said you were gay, and what you were into.</p>
+  </article><article class="flag-card sig-card reveal" style="--d:240ms;--glow:#FFD800" tabindex="0">
+    <svg class="sig-icon" viewbox="0 0 96 96" aria-hidden="true"><path d="M62 16 C40 10 24 26 26 46 C27 58 34 62 36 72 C38 84 48 90 58 84" fill="none" stroke="#a1a1a6" stroke-width="5" stroke-linecap="round" /><path d="M50 36 C54 30 62 32 62 40 C62 48 54 50 54 56" fill="none" stroke="#a1a1a6" stroke-width="4" stroke-linecap="round" /><circle cx="52" cy="76" r="7" fill="#FFD800"></circle><path d="M70 62 l4 -8 l4 8 l-4 8 Z" fill="#FFD800" /></svg>
+    <h3>Right ear piercing</h3>
+    <p class="blurb">A 1980s–90s rule of thumb said a stud in the right ear meant a man was gay.</p>
+  </article><article class="flag-card sig-card reveal" style="--d:320ms;--glow:#B57EDC" tabindex="0">
+    <svg class="sig-icon" viewbox="0 0 96 96" aria-hidden="true"><rect x="18" y="8" width="34" height="62" rx="17" fill="none" stroke="#B57EDC" stroke-width="6" /><path d="M52 30 L44 44" stroke="var(--card-bg, #0a0a0a)" stroke-width="6" /><circle cx="58" cy="68" r="10" fill="none" stroke="#f5f5f7" stroke-width="5"></circle><path d="M65 75 L84 92 M74 83 L79 78 M79 88 L83 84" stroke="#f5f5f7" stroke-width="5" stroke-linecap="round" /></svg>
+    <h3>The key code</h3>
+    <p class="blurb">Lesbians clipped keys or a carabiner to a belt loop to signal their orientation. The side mattered.</p>
+  </article></div><p class="question reveal">Got a funny flagging story, or one we missed? <span>Share it.</span></p>
+</div>
+<div id="resources" class="block">
+<div class="intro reveal">
+<p><span class="eyebrow">Resources</span></p>
+<h2 id="learn-more.">Learn more.</h2>
+</div>
+<h3 class="res-head reveal">Pride flags</h3><ul class="resources reveal"><li><span class="org">Human Rights Campaign</span><a href="https://www.hrc.org/resources/lgbtq-pride-flags" target="_blank" rel="noopener">LGBTQ+ Pride Flags ›</a></li><li><span class="org">San Diego Pride</span><a href="https://sdpride.org/hidden-history-of-the-pride-flag/" target="_blank" rel="noopener">The Hidden History of the Pride Flag ›</a></li><li><span class="org">PFLAG</span><a href="https://pflag.org/glossary/" target="_blank" rel="noopener">Glossary of Terms ›</a></li><li><span class="org">PFLAG San Francisco</span><a href="https://pflagsf.org/resource/pride-flags/" target="_blank" rel="noopener">Pride Flags ›</a></li></ul>
+<h3 class="res-head reveal">Flagging</h3><ul class="resources reveal"><li><span class="org">Webbink (1981), Springer</span><a href="https://doi.org/10.1007/978-1-4612-5953-4_12" target="_blank" rel="noopener">Nonverbal Behavior and Lesbian/Gay Orientation ›</a></li><li><span class="org">Queer Events</span><a href="https://www.queerevents.ca/queer-corner/blog/history/queers-community-flagging" target="_blank" rel="noopener">Colour Codes: Flagging in the Queer Community ›</a></li><li><span class="org">Feeld</span><a href="https://feeld.co/ask-feeld/how-to/the-many-histories-of-flagging" target="_blank" rel="noopener">The Many Histories of Flagging ›</a></li><li><span class="org">The University Daily Kansan</span><a href="https://www.kansan.com/arts_and_culture/queer-signaling-an-unspoken-language-in-the-lgbtq-community/article_90b78122-f00f-11ef-98c2-fbcf30afee45.html" target="_blank" rel="noopener">Queer Signaling: An Unspoken Language ›</a></li></ul>
+<p><span class="thanks reveal">Thank you.</span></p>
+</div>
+
+<div class="callout" id="callout" role="status" aria-live="polite" hidden>
+  <span class="sw"></span>
+  <div><strong></strong><p></p></div>
+</div>
+<script>
+(() => {
+  const root = document.documentElement;
+  root.classList.add('js');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const touch = matchMedia('(hover: none)').matches;
+
+  /* ---- Scroll reveal ---------------------------------------------- */
+  const items = document.querySelectorAll('.reveal');
+  if (reduce || !('IntersectionObserver' in window)) {
+    items.forEach(el => el.classList.add('in'));
+  } else {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    items.forEach(el => io.observe(el));
+  }
+
+  /* ---- Stripe callouts ------------------------------------------- */
+  const callout = document.getElementById('callout');
+  const cTitle = callout.querySelector('strong');
+  const cText = callout.querySelector('p');
+  const cSwatch = callout.querySelector('.sw');
+  let current = null;
+
+  function close() {
+    if (!current) return;
+    const fig = current.closest('.flag-fig');
+    current.classList.remove('selected');
+    fig.classList.remove('has-selection');
+    fig.closest('.flag-card, .original')?.classList.remove('active');
+    document.querySelectorAll('.chip[aria-pressed="true"]').forEach(c => c.setAttribute('aria-pressed', 'false'));
+    callout.hidden = true;
+    current = null;
+  }
+
+  function place(stripe, clientX) {
+    const fig = stripe.closest('.flag-fig');
+    const f = fig.getBoundingClientRect();
+    const r = stripe.getBoundingClientRect();
+    const x = (clientX ?? r.left + r.width / 2) - f.left;
+    const cw = callout.offsetWidth;
+    const left = Math.max(-12, Math.min(f.width - cw + 12, x - cw / 2));
+    callout.style.left = left + 'px';
+    callout.style.top = (r.bottom - f.top + 12) + 'px';
+    callout.style.setProperty('--ax', Math.max(18, Math.min(cw - 18, x - left)) + 'px');
+  }
+
+  function open(stripe, clientX) {
+    if (current === stripe) { close(); return; }
+    close();
+    current = stripe;
+    const fig = stripe.closest('.flag-fig');
+    stripe.classList.add('selected');
+    fig.classList.add('has-selection');
+    fig.closest('.flag-card, .original')?.classList.add('active');
+    document.querySelectorAll(`.chip[data-stripe="${stripe.id}"]`).forEach(c => c.setAttribute('aria-pressed', 'true'));
+    cSwatch.style.background = stripe.getAttribute('fill');
+    cTitle.textContent = stripe.dataset.name;
+    cText.textContent = stripe.dataset.meaning;
+    fig.appendChild(callout);
+    callout.hidden = false;
+    callout.classList.remove('pop'); void callout.offsetWidth; callout.classList.add('pop');
+    place(stripe, clientX);
+    // re-place once the hover zoom settles
+    setTimeout(() => current === stripe && place(stripe, clientX), 380);
+  }
+
+  document.addEventListener('click', e => {
+    const stripe = e.target.closest('.stripe');
+    if (stripe) { open(stripe, e.clientX); return; }
+    const chip = e.target.closest('.chip');
+    if (chip) { open(document.getElementById(chip.dataset.stripe)); return; }
+    if (e.target.closest('.callout')) return;
+    close();
+
+    // touch: tap a timeline item to spotlight it
+    if (touch) {
+      const t = e.target.closest('.t-item');
+      document.querySelectorAll('.t-item.active').forEach(el => el !== t && el.classList.remove('active'));
+      t?.classList.toggle('active');
+    }
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') { close(); return; }
+    const stripe = e.target.closest?.('.stripe');
+    if (stripe && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); open(stripe); }
+  });
+
+  // close on real width changes only (mobile URL-bar scrolling changes height)
+  let lastW = innerWidth;
+  addEventListener('resize', () => { if (innerWidth !== lastW) { lastW = innerWidth; close(); } });
+})();
+</script>
+
+
+
+
+</body></html>
